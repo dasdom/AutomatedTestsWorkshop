@@ -13,6 +13,9 @@ struct UserInputView: View {
       Section {
         TextField("First name", text: $data.firstName)
         TextField("Lastname", text: $data.lastname)
+        Button("Save", action: {
+          
+        })
       }
     }
   }

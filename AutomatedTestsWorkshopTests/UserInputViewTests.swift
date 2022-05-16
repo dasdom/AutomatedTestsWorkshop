@@ -52,4 +52,16 @@ class UserInputViewTests: XCTestCase {
     let input = userInputData.lastname
     XCTAssertEqual(input, expected)
   }
+
+  func test_shouldHaveASaveButton() {
+    XCTAssertNoThrow(try sut
+      .inspect()
+      .find(ViewType.Button.self, where: { view in
+        let label = try view
+          .labelView()
+          .text()
+          .string()
+        return label == "Save"
+      }))
+  }
 }
