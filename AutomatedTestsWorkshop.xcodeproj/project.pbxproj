@@ -27,6 +27,10 @@
 		F2E751EB2832E1A0002F3CD0 /* StoryboardBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751E92832E1A0002F3CD0 /* StoryboardBasedViewController.swift */; };
 		F2E751EC2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751EA2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift */; };
 		F2E751EF2832E1C8002F3CD0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E751EE2832E1C2002F3CD0 /* Storyboard.storyboard */; };
+		F2E751F12832E438002F3CD0 /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751F02832E438002F3CD0 /* UserInputView.swift */; };
+		F2E751F42832E4F7002F3CD0 /* UserInputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751F32832E4F7002F3CD0 /* UserInputData.swift */; };
+		F2E751F72832E5CB002F3CD0 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = F2E751F62832E5CB002F3CD0 /* ViewInspector */; };
+		F2E751F92832E5EF002F3CD0 /* UserInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751F82832E5EF002F3CD0 /* UserInputViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,9 @@
 		F2E751E92832E1A0002F3CD0 /* StoryboardBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewController.swift; sourceTree = "<group>"; };
 		F2E751EA2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedDetailViewController.swift; sourceTree = "<group>"; };
 		F2E751EE2832E1C2002F3CD0 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		F2E751F02832E438002F3CD0 /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
+		F2E751F32832E4F7002F3CD0 /* UserInputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputData.swift; sourceTree = "<group>"; };
+		F2E751F82832E5EF002F3CD0 /* UserInputViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E751F72832E5CB002F3CD0 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +115,7 @@
 			children = (
 				F287128E2832951100C0A083 /* AppDelegate.swift */,
 				F28712902832951100C0A083 /* SceneDelegate.swift */,
+				F2E751F22832E490002F3CD0 /* SwiftUI */,
 				F2E751E02832B55B002F3CD0 /* Networking */,
 				F2E751D72832B309002F3CD0 /* ViewController */,
 				F2E751D52832B2F8002F3CD0 /* Model */,
@@ -125,6 +134,7 @@
 				F2E751D92832B3D4002F3CD0 /* Doubles */,
 				F2E751D62832B301002F3CD0 /* Model */,
 				F2E751E22832E104002F3CD0 /* ViewControllers */,
+				F2E751F82832E5EF002F3CD0 /* UserInputViewTests.swift */,
 			);
 			path = AutomatedTestsWorkshopTests;
 			sourceTree = "<group>";
@@ -208,6 +218,15 @@
 			path = StoryboardBasedViewControllers;
 			sourceTree = "<group>";
 		};
+		F2E751F22832E490002F3CD0 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F2E751F02832E438002F3CD0 /* UserInputView.swift */,
+				F2E751F32832E4F7002F3CD0 /* UserInputData.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +261,9 @@
 				F28712AD2832986900C0A083 /* PBXTargetDependency */,
 			);
 			name = AutomatedTestsWorkshopTests;
+			packageProductDependencies = (
+				F2E751F62832E5CB002F3CD0 /* ViewInspector */,
+			);
 			productName = AutomatedTestsWorkshopTests;
 			productReference = F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -274,6 +296,9 @@
 				Base,
 			);
 			mainGroup = F28712822832951100C0A083;
+			packageReferences = (
+				F2E751F52832E5CB002F3CD0 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = F287128C2832951100C0A083 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,12 +339,14 @@
 				F2E751EC2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift in Sources */,
 				F28712B42832996A00C0A083 /* User.swift in Sources */,
 				F2E751E82832E16D002F3CD0 /* CodeBasedViewController.swift in Sources */,
+				F2E751F42832E4F7002F3CD0 /* UserInputData.swift in Sources */,
 				F2E751CC28329FD2002F3CD0 /* UserStore.swift in Sources */,
 				F28712932832951100C0A083 /* ViewController.swift in Sources */,
 				F2E751E72832E16D002F3CD0 /* CodeBasedView.swift in Sources */,
 				F287128F2832951100C0A083 /* AppDelegate.swift in Sources */,
 				F28712912832951100C0A083 /* SceneDelegate.swift in Sources */,
 				F2E751DF2832B556002F3CD0 /* APIClient.swift in Sources */,
+				F2E751F12832E438002F3CD0 /* UserInputView.swift in Sources */,
 				F2E751EB2832E1A0002F3CD0 /* StoryboardBasedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +359,7 @@
 				F2E751CA28329E39002F3CD0 /* UserStoreTests.swift in Sources */,
 				F2E751DD2832B538002F3CD0 /* URLSessionProtocolMock.swift in Sources */,
 				F28712B2283298DB00C0A083 /* UserTests.swift in Sources */,
+				F2E751F92832E5EF002F3CD0 /* UserInputViewTests.swift in Sources */,
 				F2E751E32832E122002F3CD0 /* LoadingViewControllersInTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2E751F52832E5CB002F3CD0 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2E751F62832E5CB002F3CD0 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2E751F52832E5CB002F3CD0 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F28712832832951100C0A083 /* Project object */;
 }
