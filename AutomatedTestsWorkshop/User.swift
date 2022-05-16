@@ -7,4 +7,5 @@ import Foundation
 struct User {
   var firstName: String = ""
   var lastname: String = ""
+  var fullName: String = ""
 }

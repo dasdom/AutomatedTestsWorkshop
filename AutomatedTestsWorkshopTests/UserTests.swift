@@ -26,5 +26,6 @@ class UserTests: XCTestCase {
     let fullName = sut.fullName
 
     // then
+    XCTAssert(fullName == "Dominik Hauser")
   }
 }
