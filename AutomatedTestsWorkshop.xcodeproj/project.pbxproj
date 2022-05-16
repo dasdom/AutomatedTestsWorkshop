@@ -14,7 +14,7 @@
 		F28712982832951200C0A083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28712972832951200C0A083 /* Assets.xcassets */; };
 		F287129B2832951200C0A083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28712992832951200C0A083 /* LaunchScreen.storyboard */; };
 		F28712A3283295C100C0A083 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F28712A2283295C100C0A083 /* README.md */; };
-		F28712AB2832986900C0A083 /* AutomatedTestsWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28712AA2832986900C0A083 /* AutomatedTestsWorkshopTests.swift */; };
+		F28712B2283298DB00C0A083 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28712B1283298DB00C0A083 /* UserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 		F287129C2832951200C0A083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28712A2283295C100C0A083 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatedTestsWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F28712AA2832986900C0A083 /* AutomatedTestsWorkshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedTestsWorkshopTests.swift; sourceTree = "<group>"; };
+		F28712B1283298DB00C0A083 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		F28712A92832986900C0A083 /* AutomatedTestsWorkshopTests */ = {
 			isa = PBXGroup;
 			children = (
-				F28712AA2832986900C0A083 /* AutomatedTestsWorkshopTests.swift */,
+				F28712B1283298DB00C0A083 /* UserTests.swift */,
 			);
 			path = AutomatedTestsWorkshopTests;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F28712AB2832986900C0A083 /* AutomatedTestsWorkshopTests.swift in Sources */,
+				F28712B2283298DB00C0A083 /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
