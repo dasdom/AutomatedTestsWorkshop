@@ -16,4 +16,14 @@ class UserTests: XCTestCase {
   override func tearDownWithError() throws {
     sut = nil
   }
+
+  func test_settingFirstAndLastname_shouldSetNameProperty() {
+    // given
+    sut.firstName = "Dominik"
+    sut.lastname = "Hauser"
+
+    // when
+
+    // then
+  }
 }
