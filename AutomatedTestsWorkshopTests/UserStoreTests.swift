@@ -29,5 +29,9 @@ class UserStoreTests: XCTestCase {
 
     // when
     sut.add(user)
+
+    // then
+    token.cancel()
+    XCTAssertEqual(result, [user])
   }
 }

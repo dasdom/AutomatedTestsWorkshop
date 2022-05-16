@@ -11,4 +11,8 @@ class UserStore {
   init() {
     usersPublisher = CurrentValueSubject<[User], Never>([])
   }
+
+  func add(_ user: User) {
+    
+  }
 }
