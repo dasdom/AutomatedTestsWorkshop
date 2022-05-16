@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct User: Equatable {
+struct User: Equatable, Codable {
   var firstName: String {
     didSet {
       updateName()
