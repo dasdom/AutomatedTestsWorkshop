@@ -89,9 +89,8 @@
 			children = (
 				F287128E2832951100C0A083 /* AppDelegate.swift */,
 				F28712902832951100C0A083 /* SceneDelegate.swift */,
-				F28712922832951100C0A083 /* ViewController.swift */,
-				F28712B32832996A00C0A083 /* User.swift */,
-				F2E751CB28329FD2002F3CD0 /* UserStore.swift */,
+				F2E751D72832B309002F3CD0 /* ViewController */,
+				F2E751D52832B2F8002F3CD0 /* Model */,
 				F28712942832951100C0A083 /* Main.storyboard */,
 				F28712972832951200C0A083 /* Assets.xcassets */,
 				F28712992832951200C0A083 /* LaunchScreen.storyboard */,
@@ -103,10 +102,35 @@
 		F28712A92832986900C0A083 /* AutomatedTestsWorkshopTests */ = {
 			isa = PBXGroup;
 			children = (
+				F2E751D62832B301002F3CD0 /* Model */,
+			);
+			path = AutomatedTestsWorkshopTests;
+			sourceTree = "<group>";
+		};
+		F2E751D52832B2F8002F3CD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F28712B32832996A00C0A083 /* User.swift */,
+				F2E751CB28329FD2002F3CD0 /* UserStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2E751D62832B301002F3CD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				F28712B1283298DB00C0A083 /* UserTests.swift */,
 				F2E751C928329E39002F3CD0 /* UserStoreTests.swift */,
 			);
-			path = AutomatedTestsWorkshopTests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2E751D72832B309002F3CD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F28712922832951100C0A083 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
