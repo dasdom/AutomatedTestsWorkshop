@@ -26,6 +26,6 @@ class UserTests: XCTestCase {
     let fullName = sut.fullName
 
     // then
-    XCTAssertEqual(fullName, "Dominik Hauser")
+    XCTAssertEqual(fullName, "\(sut.firstName) \(sut.lastname)")
   }
 }
