@@ -21,17 +21,20 @@ class UserStoreTests: XCTestCase {
     // given
     let user = User(firstName: "name")
     var result: [User]?
+    let publisherExpectation = expectation(description: "Wait for publisher in \(#file)")
     let token = sut.usersPublisher
       .dropFirst()
       .delay(for: 0.1, scheduler: RunLoop.main)
       .sink { users in
         result = users
+        publisherExpectation.fulfill()
       }
 
     // when
     sut.add(user)
 
     // then
+    wait(for: [publisherExpectation], timeout: 0.2)
     token.cancel()
     XCTAssertEqual(result, [user])
   }
