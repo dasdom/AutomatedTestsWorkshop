@@ -11,10 +11,12 @@ class CodeBasedView: UIView {
   override init(frame: CGRect) {
 
     label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = true
+    label.translatesAutoresizingMaskIntoConstraints = false
     label.text = "Code based view controller"
 
     super.init(frame: frame)
+
+    backgroundColor = .white
 
     addSubview(label)
 

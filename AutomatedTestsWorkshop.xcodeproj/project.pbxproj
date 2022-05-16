@@ -16,6 +16,8 @@
 		F28712A3283295C100C0A083 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F28712A2283295C100C0A083 /* README.md */; };
 		F28712B2283298DB00C0A083 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28712B1283298DB00C0A083 /* UserTests.swift */; };
 		F28712B42832996A00C0A083 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28712B32832996A00C0A083 /* User.swift */; };
+		F2C8D5C12832EC6900079C88 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F2C8D5C02832EC6900079C88 /* SnapshotTesting */; };
+		F2C8D5C32832EC9200079C88 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C8D5C22832EC9200079C88 /* SnapshotTests.swift */; };
 		F2E751CA28329E39002F3CD0 /* UserStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751C928329E39002F3CD0 /* UserStoreTests.swift */; };
 		F2E751CC28329FD2002F3CD0 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751CB28329FD2002F3CD0 /* UserStore.swift */; };
 		F2E751DC2832B534002F3CD0 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751DA2832B4A5002F3CD0 /* APIClientTests.swift */; };
@@ -56,6 +58,7 @@
 		F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatedTestsWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28712B1283298DB00C0A083 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		F28712B32832996A00C0A083 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F2C8D5C22832EC9200079C88 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
 		F2E751C928329E39002F3CD0 /* UserStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoreTests.swift; sourceTree = "<group>"; };
 		F2E751CB28329FD2002F3CD0 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		F2E751D82832B3B9002F3CD0 /* URLSessionProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocolMock.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E751F72832E5CB002F3CD0 /* ViewInspector in Frameworks */,
+				F2C8D5C12832EC6900079C88 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +139,7 @@
 				F2E751D62832B301002F3CD0 /* Model */,
 				F2E751E22832E104002F3CD0 /* ViewControllers */,
 				F2E751F82832E5EF002F3CD0 /* UserInputViewTests.swift */,
+				F2C8D5C22832EC9200079C88 /* SnapshotTests.swift */,
 			);
 			path = AutomatedTestsWorkshopTests;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			name = AutomatedTestsWorkshopTests;
 			packageProductDependencies = (
 				F2E751F62832E5CB002F3CD0 /* ViewInspector */,
+				F2C8D5C02832EC6900079C88 /* SnapshotTesting */,
 			);
 			productName = AutomatedTestsWorkshopTests;
 			productReference = F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */;
@@ -298,6 +304,7 @@
 			mainGroup = F28712822832951100C0A083;
 			packageReferences = (
 				F2E751F52832E5CB002F3CD0 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				F2C8D5BF2832EC6900079C88 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = F287128C2832951100C0A083 /* Products */;
 			projectDirPath = "";
@@ -359,6 +366,7 @@
 				F2E751CA28329E39002F3CD0 /* UserStoreTests.swift in Sources */,
 				F2E751DD2832B538002F3CD0 /* URLSessionProtocolMock.swift in Sources */,
 				F28712B2283298DB00C0A083 /* UserTests.swift in Sources */,
+				F2C8D5C32832EC9200079C88 /* SnapshotTests.swift in Sources */,
 				F2E751F92832E5EF002F3CD0 /* UserInputViewTests.swift in Sources */,
 				F2E751E32832E122002F3CD0 /* LoadingViewControllersInTests.swift in Sources */,
 			);
@@ -633,6 +641,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F2C8D5BF2832EC6900079C88 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		F2E751F52832E5CB002F3CD0 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nalexn/ViewInspector";
@@ -644,6 +660,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F2C8D5C02832EC6900079C88 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2C8D5BF2832EC6900079C88 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
 		F2E751F62832E5CB002F3CD0 /* ViewInspector */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F2E751F52832E5CB002F3CD0 /* XCRemoteSwiftPackageReference "ViewInspector" */;
