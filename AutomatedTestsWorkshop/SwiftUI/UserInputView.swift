@@ -11,7 +11,7 @@ struct UserInputView: View {
   var body: some View {
     Form {
       Section {
-        Text("Foo")
+        TextField("First name", text: $data.firstName)
       }
     }
   }
