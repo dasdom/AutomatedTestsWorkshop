@@ -21,6 +21,12 @@
 		F2E751DC2832B534002F3CD0 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751DA2832B4A5002F3CD0 /* APIClientTests.swift */; };
 		F2E751DD2832B538002F3CD0 /* URLSessionProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751D82832B3B9002F3CD0 /* URLSessionProtocolMock.swift */; };
 		F2E751DF2832B556002F3CD0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751DE2832B556002F3CD0 /* APIClient.swift */; };
+		F2E751E32832E122002F3CD0 /* LoadingViewControllersInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751E12832E0FE002F3CD0 /* LoadingViewControllersInTests.swift */; };
+		F2E751E72832E16D002F3CD0 /* CodeBasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751E52832E163002F3CD0 /* CodeBasedView.swift */; };
+		F2E751E82832E16D002F3CD0 /* CodeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751E62832E163002F3CD0 /* CodeBasedViewController.swift */; };
+		F2E751EB2832E1A0002F3CD0 /* StoryboardBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751E92832E1A0002F3CD0 /* StoryboardBasedViewController.swift */; };
+		F2E751EC2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E751EA2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift */; };
+		F2E751EF2832E1C8002F3CD0 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E751EE2832E1C2002F3CD0 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		F2E751D82832B3B9002F3CD0 /* URLSessionProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocolMock.swift; sourceTree = "<group>"; };
 		F2E751DA2832B4A5002F3CD0 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		F2E751DE2832B556002F3CD0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F2E751E12832E0FE002F3CD0 /* LoadingViewControllersInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllersInTests.swift; sourceTree = "<group>"; };
+		F2E751E52832E163002F3CD0 /* CodeBasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedView.swift; sourceTree = "<group>"; };
+		F2E751E62832E163002F3CD0 /* CodeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBasedViewController.swift; sourceTree = "<group>"; };
+		F2E751E92832E1A0002F3CD0 /* StoryboardBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedViewController.swift; sourceTree = "<group>"; };
+		F2E751EA2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBasedDetailViewController.swift; sourceTree = "<group>"; };
+		F2E751EE2832E1C2002F3CD0 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 				F2E751DB2832B4AF002F3CD0 /* Networking */,
 				F2E751D92832B3D4002F3CD0 /* Doubles */,
 				F2E751D62832B301002F3CD0 /* Model */,
+				F2E751E22832E104002F3CD0 /* ViewControllers */,
 			);
 			path = AutomatedTestsWorkshopTests;
 			sourceTree = "<group>";
@@ -137,6 +150,8 @@
 		F2E751D72832B309002F3CD0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F2E751ED2832E1A9002F3CD0 /* StoryboardBasedViewControllers */,
+				F2E751E42832E163002F3CD0 /* CodeBasedViewController */,
 				F28712922832951100C0A083 /* ViewController.swift */,
 			);
 			path = ViewController;
@@ -164,6 +179,33 @@
 				F2E751DE2832B556002F3CD0 /* APIClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		F2E751E22832E104002F3CD0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2E751E12832E0FE002F3CD0 /* LoadingViewControllersInTests.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F2E751E42832E163002F3CD0 /* CodeBasedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F2E751E52832E163002F3CD0 /* CodeBasedView.swift */,
+				F2E751E62832E163002F3CD0 /* CodeBasedViewController.swift */,
+			);
+			path = CodeBasedViewController;
+			sourceTree = "<group>";
+		};
+		F2E751ED2832E1A9002F3CD0 /* StoryboardBasedViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2E751EE2832E1C2002F3CD0 /* Storyboard.storyboard */,
+				F2E751EA2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift */,
+				F2E751E92832E1A0002F3CD0 /* StoryboardBasedViewController.swift */,
+			);
+			path = StoryboardBasedViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +293,7 @@
 				F28712982832951200C0A083 /* Assets.xcassets in Resources */,
 				F28712A3283295C100C0A083 /* README.md in Resources */,
 				F28712962832951100C0A083 /* Main.storyboard in Resources */,
+				F2E751EF2832E1C8002F3CD0 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,12 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E751EC2832E1A0002F3CD0 /* StoryboardBasedDetailViewController.swift in Sources */,
 				F28712B42832996A00C0A083 /* User.swift in Sources */,
+				F2E751E82832E16D002F3CD0 /* CodeBasedViewController.swift in Sources */,
 				F2E751CC28329FD2002F3CD0 /* UserStore.swift in Sources */,
 				F28712932832951100C0A083 /* ViewController.swift in Sources */,
+				F2E751E72832E16D002F3CD0 /* CodeBasedView.swift in Sources */,
 				F287128F2832951100C0A083 /* AppDelegate.swift in Sources */,
 				F28712912832951100C0A083 /* SceneDelegate.swift in Sources */,
 				F2E751DF2832B556002F3CD0 /* APIClient.swift in Sources */,
+				F2E751EB2832E1A0002F3CD0 /* StoryboardBasedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +332,7 @@
 				F2E751CA28329E39002F3CD0 /* UserStoreTests.swift in Sources */,
 				F2E751DD2832B538002F3CD0 /* URLSessionProtocolMock.swift in Sources */,
 				F28712B2283298DB00C0A083 /* UserTests.swift in Sources */,
+				F2E751E32832E122002F3CD0 /* LoadingViewControllersInTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
