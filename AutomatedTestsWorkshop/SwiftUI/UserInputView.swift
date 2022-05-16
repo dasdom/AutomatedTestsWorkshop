@@ -12,6 +12,7 @@ struct UserInputView: View {
     Form {
       Section {
         TextField("First name", text: $data.firstName)
+        TextField("Lastname", text: $data.lastname)
       }
     }
   }
