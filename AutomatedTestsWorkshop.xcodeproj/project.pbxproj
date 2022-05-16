@@ -15,6 +15,7 @@
 		F287129B2832951200C0A083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28712992832951200C0A083 /* LaunchScreen.storyboard */; };
 		F28712A3283295C100C0A083 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F28712A2283295C100C0A083 /* README.md */; };
 		F28712B2283298DB00C0A083 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28712B1283298DB00C0A083 /* UserTests.swift */; };
+		F28712B42832996A00C0A083 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28712B32832996A00C0A083 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		F28712A2283295C100C0A083 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatedTestsWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28712B1283298DB00C0A083 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		F28712B32832996A00C0A083 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				F287128E2832951100C0A083 /* AppDelegate.swift */,
 				F28712902832951100C0A083 /* SceneDelegate.swift */,
 				F28712922832951100C0A083 /* ViewController.swift */,
+				F28712B32832996A00C0A083 /* User.swift */,
 				F28712942832951100C0A083 /* Main.storyboard */,
 				F28712972832951200C0A083 /* Assets.xcassets */,
 				F28712992832951200C0A083 /* LaunchScreen.storyboard */,
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28712B42832996A00C0A083 /* User.swift in Sources */,
 				F28712932832951100C0A083 /* ViewController.swift in Sources */,
 				F287128F2832951100C0A083 /* AppDelegate.swift in Sources */,
 				F28712912832951100C0A083 /* SceneDelegate.swift in Sources */,
