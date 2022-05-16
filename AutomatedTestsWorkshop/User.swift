@@ -5,17 +5,22 @@
 import Foundation
 
 struct User {
-  var firstName: String = "" {
+  var firstName: String {
     didSet {
       updateName()
     }
   }
-  var lastname: String = "" {
+  var lastname: String {
     didSet {
       updateName()
     }
   }
   var fullName: String = ""
+
+  init(firstName: String = "", lastname: String = "") {
+    self.firstName = firstName
+    self.lastname = lastname
+  }
 
   private mutating func updateName() {
     fullName = [firstName, lastname].joined(separator: " ")
