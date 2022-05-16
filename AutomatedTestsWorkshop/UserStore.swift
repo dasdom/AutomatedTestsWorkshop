@@ -3,7 +3,12 @@
 //
 
 import Foundation
+import Combine
 
 class UserStore {
-  
+  let usersPublisher: CurrentValueSubject<[User], Never>
+
+  init() {
+    usersPublisher = CurrentValueSubject<[User], Never>([])
+  }
 }
