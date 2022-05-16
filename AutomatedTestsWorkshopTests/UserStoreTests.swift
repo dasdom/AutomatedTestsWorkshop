@@ -18,6 +18,7 @@ class UserStoreTests: XCTestCase {
   }
 
   func test_addUser_shouldPublishUsers() {
+    // given
     let user = User(firstName: "name")
     var result: [User]?
     let token = sut.usersPublisher
@@ -25,5 +26,8 @@ class UserStoreTests: XCTestCase {
       .sink { users in
         result = users
       }
+
+    // when
+    sut.add(user)
   }
 }
