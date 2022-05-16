@@ -5,7 +5,15 @@
 import Foundation
 
 struct User {
-  var firstName: String = ""
-  var lastname: String = ""
+  var firstName: String = "" {
+    didSet {
+      fullName = "\(firstName) \(lastname)"
+    }
+  }
+  var lastname: String = "" {
+    didSet {
+      fullName = "\(firstName) \(lastname)"
+    }
+  }
   var fullName: String = ""
 }
