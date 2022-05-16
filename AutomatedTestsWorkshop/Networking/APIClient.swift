@@ -15,7 +15,15 @@ class APIClient {
   var session: URLSessionProtocol? = URLSession.shared
 
   func loadUser() async throws -> User {
+    guard let url = URL(string: "http://example.com/user") else {
+      fatalError()
+    }
+    guard let session = session else {
+      fatalError()
+    }
 
-    return User()
+    let (data, _) = try await session.data(from: url, delegate: nil)
+    let user = try JSONDecoder().decode(User.self, from: data)
+    return user
   }
 }
