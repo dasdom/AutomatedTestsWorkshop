@@ -8,4 +8,12 @@ import XCTest
 class UserTests: XCTestCase {
 
   var sut: User!
+
+  override func setUpWithError() throws {
+    sut = User()
+  }
+
+  override func tearDownWithError() throws {
+    sut = nil
+  }
 }
