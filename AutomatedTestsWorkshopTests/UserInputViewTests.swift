@@ -34,4 +34,22 @@ class UserInputViewTests: XCTestCase {
     let input = userInputData.firstName
     XCTAssertEqual(input, expected)
   }
+
+  func test_lastnameInput_shouldUpdateInputData() throws {
+    let expected = "Hauser"
+
+    try sut
+      .inspect()
+      .find(ViewType.TextField.self, where: { view in
+        let label = try view
+          .labelView()
+          .text()
+          .string()
+        return label == "Lastname"
+      })
+      .setInput(expected)
+
+    let input = userInputData.lastname
+    XCTAssertEqual(input, expected)
+  }
 }
