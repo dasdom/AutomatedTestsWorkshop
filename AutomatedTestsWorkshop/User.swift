@@ -7,13 +7,17 @@ import Foundation
 struct User {
   var firstName: String = "" {
     didSet {
-      fullName = "\(firstName) \(lastname)"
+      updateName()
     }
   }
   var lastname: String = "" {
     didSet {
-      fullName = "\(firstName) \(lastname)"
+      updateName()
     }
   }
   var fullName: String = ""
+
+  private mutating func updateName() {
+    fullName = [firstName, lastname].joined(separator: " ")
+  }
 }
