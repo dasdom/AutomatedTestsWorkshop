@@ -14,7 +14,18 @@
 		F28712982832951200C0A083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28712972832951200C0A083 /* Assets.xcassets */; };
 		F287129B2832951200C0A083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28712992832951200C0A083 /* LaunchScreen.storyboard */; };
 		F28712A3283295C100C0A083 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F28712A2283295C100C0A083 /* README.md */; };
+		F28712AB2832986900C0A083 /* AutomatedTestsWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28712AA2832986900C0A083 /* AutomatedTestsWorkshopTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F28712AC2832986900C0A083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F28712832832951100C0A083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F287128A2832951100C0A083;
+			remoteInfo = AutomatedTestsWorkshop;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F287128B2832951100C0A083 /* AutomatedTestsWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomatedTestsWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,19 @@
 		F287129A2832951200C0A083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F287129C2832951200C0A083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28712A2283295C100C0A083 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatedTestsWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28712AA2832986900C0A083 /* AutomatedTestsWorkshopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatedTestsWorkshopTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F28712882832951100C0A083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28712A52832986900C0A083 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +64,7 @@
 			children = (
 				F28712A2283295C100C0A083 /* README.md */,
 				F287128D2832951100C0A083 /* AutomatedTestsWorkshop */,
+				F28712A92832986900C0A083 /* AutomatedTestsWorkshopTests */,
 				F287128C2832951100C0A083 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F287128B2832951100C0A083 /* AutomatedTestsWorkshop.app */,
+				F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +90,14 @@
 				F287129C2832951200C0A083 /* Info.plist */,
 			);
 			path = AutomatedTestsWorkshop;
+			sourceTree = "<group>";
+		};
+		F28712A92832986900C0A083 /* AutomatedTestsWorkshopTests */ = {
+			isa = PBXGroup;
+			children = (
+				F28712AA2832986900C0A083 /* AutomatedTestsWorkshopTests.swift */,
+			);
+			path = AutomatedTestsWorkshopTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +120,24 @@
 			productReference = F287128B2832951100C0A083 /* AutomatedTestsWorkshop.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F28712A72832986900C0A083 /* AutomatedTestsWorkshopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28712AE2832986900C0A083 /* Build configuration list for PBXNativeTarget "AutomatedTestsWorkshopTests" */;
+			buildPhases = (
+				F28712A42832986900C0A083 /* Sources */,
+				F28712A52832986900C0A083 /* Frameworks */,
+				F28712A62832986900C0A083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F28712AD2832986900C0A083 /* PBXTargetDependency */,
+			);
+			name = AutomatedTestsWorkshopTests;
+			productName = AutomatedTestsWorkshopTests;
+			productReference = F28712A82832986900C0A083 /* AutomatedTestsWorkshopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +150,10 @@
 				TargetAttributes = {
 					F287128A2832951100C0A083 = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					F28712A72832986900C0A083 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = F287128A2832951100C0A083;
 					};
 				};
 			};
@@ -119,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				F287128A2832951100C0A083 /* AutomatedTestsWorkshop */,
+				F28712A72832986900C0A083 /* AutomatedTestsWorkshopTests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +188,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F28712A62832986900C0A083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,7 +208,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F28712A42832986900C0A083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28712AB2832986900C0A083 /* AutomatedTestsWorkshopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F28712AD2832986900C0A083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F287128A2832951100C0A083 /* AutomatedTestsWorkshop */;
+			targetProxy = F28712AC2832986900C0A083 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F28712942832951100C0A083 /* Main.storyboard */ = {
@@ -340,6 +416,42 @@
 			};
 			name = Release;
 		};
+		F28712AF2832986900C0A083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.AutomatedTestsWorkshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutomatedTestsWorkshop.app/AutomatedTestsWorkshop";
+			};
+			name = Debug;
+		};
+		F28712B02832986900C0A083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6PD97MRX4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.AutomatedTestsWorkshopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutomatedTestsWorkshop.app/AutomatedTestsWorkshop";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,6 +469,15 @@
 			buildConfigurations = (
 				F28712A02832951200C0A083 /* Debug */,
 				F28712A12832951200C0A083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28712AE2832986900C0A083 /* Build configuration list for PBXNativeTarget "AutomatedTestsWorkshopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28712AF2832986900C0A083 /* Debug */,
+				F28712B02832986900C0A083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
