@@ -23,6 +23,7 @@ class UserTests: XCTestCase {
     sut.lastname = "Hauser"
 
     // when
+    let fullName = sut.fullName
 
     // then
   }
