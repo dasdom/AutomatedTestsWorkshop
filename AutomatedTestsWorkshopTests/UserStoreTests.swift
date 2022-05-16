@@ -23,6 +23,7 @@ class UserStoreTests: XCTestCase {
     var result: [User]?
     let token = sut.usersPublisher
       .dropFirst()
+      .delay(for: 0.1, scheduler: RunLoop.main)
       .sink { users in
         result = users
       }
